@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandingPage</title>
+
+    <link rel="stylesheet" type="text/css" href="../styling/Styling.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+ 
+   
+</head>
+
+    </head>
+    <body>
+    
+   <section class = "wrapper">
+     <figure class = "BorderColor"></figure>
+     <nav class = "topnav">
+       <aside class = "left">
+         <figure class = "logo"><p><span>Data</span>Esports</p></figure>
+        
+       </aside>
+       <aside class = "right">
+         <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="../WSOA3029A-2262800/about/index.html">About us</a></li>
+           <li><a href="../WSOA3029A-2262800/blogs/index.html">Blogs</a></li>
+           <li><a href="#">Games</a></li>
+           <li><a href="#">Data Designs</a></li>
+           <li><a href="../WSOA3029A-2262800/contact/index.html">Contact at</a></li>
+         </ul>
+        </aside>
+      </nav>
+
+<nav class = "bottomnav">
+  <ul>
+    <li><a href="#">League of Legends</a></li>
+    <li><a href="#">Dota 2</a></li>
+    <li><a href="#">Cs:Go</a></li>
+    <li><a href="#">Overwatch</a></li>
+  </ul>
+</nav>
+</section>
+
+<main class = "main">
+
+
+
+
+  
+  <script>
+
+
+
+
+const challengerapi_url = 'https://euw1.api.riotgames.com/lol/league-exp/v4/entries/RANKED_SOLO_5x5/CHALLENGER/I?page=1&api_key=RGAPI-69f55ab9-d570-49bc-b251-31be031d2a8d'
+    async function getChallenger(){
+    const response = await fetch (challengerapi_url);
+    const data = await response.json();
+    console.log(data);
+    }
+
+
+    
+    getChallenger();
+
+   
+
+    const bronzeapi_url = ' https://euw1.api.riotgames.com/lol/league-exp/v4/entries/RANKED_SOLO_5x5/IRON/I?page=1&api_key=RGAPI-69f55ab9-d570-49bc-b251-31be031d2a8d'
+    async function getBronze(){
+    const response = await fetch (bronzeapi_url);
+    const data = await response.json();
+    console.log();
+    }
+
+
+    
+    getBronze();
+
+/*fetch ("http://ddragon.leagueoflegends.com/cdn/6.24.1/data/en_US/champion.json")
+.then ((response) => response.json())
+.then ((jsonData) => {
+const champdata = jsonData.data;
+let champname = champdata.find((x) => x.name === "Aatrox");
+console.log("data", champname);
+
+
+
+});/*
+
+
+
+    /*
+    const champapi_url = 'http://ddragon.leagueoflegends.com/cdn/6.24.1/data/en_US/champion.json'
+    async function getChamp(){
+    const response = await fetch (champapi_url);
+    const data = await response.json();
+    console.log(data);
+    }
+
+
+    
+    getChamp();
+*/
+
+/*const champapi_url = ' https://euw1.api.riotgames.com/lol/league/v4/entries/RANKED_SOLO_5x5/IRON/I?page=1&api_key=RGAPI-9bd9d8b2-eb3d-42c1-a5ca-77a47adf67a0'
+    async function getChamp(){
+    const response = await fetch (champapi_url);
+    const data = await response.json();
+    console.log();
+    }
+
+
+    
+    getChamp();*/
+   
+
+
+/*const options = {
+  method: 'GET',
+  headers: {
+    Accept: 'application/json',
+    Authorization: 'Bearer tMviYOmPsm1v_v3QGJwt2YLJNOSt0oVnB5ImN5rRCCIw12hqRbU'
+  }
+};
+
+fetch('https://api.pandascore.co/lol/champions?sort=name&page=1&per_page=100&token=tMviYOmPsm1v_v3QGJwt2YLJNOSt0oVnB5ImN5rRCCIw12hqRbU', options)
+  .then(response => response.json())
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
+   */
+  
+  </script>
+
+
+    
+</main>
+    </body>
+</html>
