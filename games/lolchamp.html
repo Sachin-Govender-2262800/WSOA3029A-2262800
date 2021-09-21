@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" type="text/css" href="../styling/Styling.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="../js/lolchamps.js"></script>
+    
  
    
 </head>
@@ -49,91 +51,43 @@
 
 
 
+<svg id = "viz" width = "600" height = "600" ></svg>
+<div id = "app"></div>
+
+
+
+<P></P>
+
+<script>
+
+
+
+
+  let margin = 50;
+  let topMargin = 10;
+  let graphHeight = 500;
+  let vizArea = d3.select('#viz');
+  let xScale = d3.scaleLinear().domain([0 ,100]).range([0,500]);
+  let yScale = d3.scaleLinear().domain([0 ,100]).range([graphHeight,0]);
+
+  vizArea
+  .append("g")
+  .attr("transform",`translate(${margin}, ${topMargin} )` )
+  .call(d3.axisLeft(yScale));
+
+
+  vizArea
+  .append("g")
+  .attr("transform",`translate( ${margin}, ${graphHeight+topMargin})` )
+  .call(d3.axisBottom(xScale));
+
+
+
+</script>
+
+
+
   
-  <script>
-
-
-
-
-const challengerapi_url = 'https://euw1.api.riotgames.com/lol/league-exp/v4/entries/RANKED_SOLO_5x5/CHALLENGER/I?page=1&api_key=RGAPI-69f55ab9-d570-49bc-b251-31be031d2a8d'
-    async function getChallenger(){
-    const response = await fetch (challengerapi_url);
-    const data = await response.json();
-    console.log(data);
-    }
-
-
-    
-    getChallenger();
-
-   
-
-    const bronzeapi_url = ' https://euw1.api.riotgames.com/lol/league-exp/v4/entries/RANKED_SOLO_5x5/IRON/I?page=1&api_key=RGAPI-69f55ab9-d570-49bc-b251-31be031d2a8d'
-    async function getBronze(){
-    const response = await fetch (bronzeapi_url);
-    const data = await response.json();
-    console.log();
-    }
-
-
-    
-    getBronze();
-
-/*fetch ("http://ddragon.leagueoflegends.com/cdn/6.24.1/data/en_US/champion.json")
-.then ((response) => response.json())
-.then ((jsonData) => {
-const champdata = jsonData.data;
-let champname = champdata.find((x) => x.name === "Aatrox");
-console.log("data", champname);
-
-
-
-});/*
-
-
-
-    /*
-    const champapi_url = 'http://ddragon.leagueoflegends.com/cdn/6.24.1/data/en_US/champion.json'
-    async function getChamp(){
-    const response = await fetch (champapi_url);
-    const data = await response.json();
-    console.log(data);
-    }
-
-
-    
-    getChamp();
-*/
-
-/*const champapi_url = ' https://euw1.api.riotgames.com/lol/league/v4/entries/RANKED_SOLO_5x5/IRON/I?page=1&api_key=RGAPI-9bd9d8b2-eb3d-42c1-a5ca-77a47adf67a0'
-    async function getChamp(){
-    const response = await fetch (champapi_url);
-    const data = await response.json();
-    console.log();
-    }
-
-
-    
-    getChamp();*/
-   
-
-
-/*const options = {
-  method: 'GET',
-  headers: {
-    Accept: 'application/json',
-    Authorization: 'Bearer tMviYOmPsm1v_v3QGJwt2YLJNOSt0oVnB5ImN5rRCCIw12hqRbU'
-  }
-};
-
-fetch('https://api.pandascore.co/lol/champions?sort=name&page=1&per_page=100&token=tMviYOmPsm1v_v3QGJwt2YLJNOSt0oVnB5ImN5rRCCIw12hqRbU', options)
-  .then(response => response.json())
-  .then(response => console.log(response))
-  .catch(err => console.error(err));
-   */
-  
-  </script>
-
 
     
 </main>

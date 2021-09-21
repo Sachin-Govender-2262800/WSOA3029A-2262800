@@ -9,7 +9,7 @@
   }
 
   body {
-    background-color: #747f92;
+    background-color: #ffffff;
   }
 
   .wrapper .BorderColor{
@@ -21,7 +21,7 @@
 
   .wrapper .topnav {
     width: 100%;
-    height: 65px;
+    height: 70px;
     background: white;
     padding:0 50px;
     display: flex;
@@ -30,7 +30,7 @@
   }
 
   .wrapper .topnav .left .logo{
-font-size: 24px;
+font-size: 30px;
 font-weight: bold;
 color: black;
 margin-right: 25px;
@@ -60,7 +60,7 @@ margin-right: 25px;
 .wrapper .bottomnav{
   width: 100%;
   background-color: #484646;
-  height: 45px;
+  height: 50px;
   padding: 0 50px;
 }
 
@@ -74,9 +74,9 @@ margin-right: 25px;
 
 .wrapper .bottomnav ul li a{
   color:white ;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 13px;
 
 }
 
@@ -118,6 +118,7 @@ margin-right: 25px;
 
 .paragraph1 {
   letter-spacing: 4px;
+  font-size: 20px;
   text-align: center;
   color: white;
 }

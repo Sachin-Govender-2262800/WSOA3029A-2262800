@@ -28,4 +28,6 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #484646;
   padding: 20px;
+  position: absolute;
+  left: 280px;
 }
