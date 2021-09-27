@@ -56,7 +56,15 @@
 
 
 
-<P></P>
+<script>
+
+  async function getData() {
+    const response = await fetch('https://euw1.api.riotgames.com/lol/league-exp/v4/entries/RANKED_SOLO_5x5/IRON/IV?page=1&api_key=RGAPI-8ea4b701-ecc7-44fe-b8e3-86bb23413c7d');
+    const data = await response.json();
+    console.log(data);
+
+  }
+</script>
 
 <script>
 

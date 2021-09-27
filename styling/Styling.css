@@ -8,6 +8,10 @@
 
   }
 
+  a{
+    cursor: pointer;
+  }
+
   body {
     background-color: #ffffff;
   }
@@ -85,42 +89,42 @@ margin-right: 25px;
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
-  color: white;
+  color: black;
 }
 
 .headingblogs2 {
   font-size: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: white;
+  color: black;
 }
 
 .headingblogs3 {
   font-size: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: white;
+  color: black;
 }
 
 .heading1 {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
-  color: white;
+  color: black;
 }
 
 .heading2 {
   font-size: 25px;
   text-align: center;
   text-transform: uppercase;
-  color: white;
+  color: black;
 }
 
 .paragraph1 {
   letter-spacing: 4px;
   font-size: 20px;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 
