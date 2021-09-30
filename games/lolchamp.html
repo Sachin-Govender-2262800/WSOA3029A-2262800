@@ -8,7 +8,9 @@
 
     <link rel="stylesheet" type="text/css" href="../styling/Styling.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="../js/lolchamps.js"></script>
+  
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+    <script src = "../js/weather.js"></script>
     
  
    
@@ -47,56 +49,19 @@
 </section>
 
 <main class = "main">
+  <header class = "heading1"><h1>Hourly Tempreature in Africa</h1></header>
+  <p>temp: <span id = "temp"></span></p>
+  <p>time: <span id = "time"></span></p>
 
-
-
-
-<svg id = "viz" width = "600" height = "600" ></svg>
-<div id = "app"></div>
-
-
-
-<script>
-
-  async function getData() {
-    const response = await fetch('https://euw1.api.riotgames.com/lol/league-exp/v4/entries/RANKED_SOLO_5x5/IRON/IV?page=1&api_key=RGAPI-8ea4b701-ecc7-44fe-b8e3-86bb23413c7d');
-    const data = await response.json();
-    console.log(data);
-
-  }
-</script>
-
-<script>
-
-
-
-
-  let margin = 50;
-  let topMargin = 10;
-  let graphHeight = 500;
-  let vizArea = d3.select('#viz');
-  let xScale = d3.scaleLinear().domain([0 ,100]).range([0,500]);
-  let yScale = d3.scaleLinear().domain([0 ,100]).range([graphHeight,0]);
-
-  vizArea
-  .append("g")
-  .attr("transform",`translate(${margin}, ${topMargin} )` )
-  .call(d3.axisLeft(yScale));
-
-
-  vizArea
-  .append("g")
-  .attr("transform",`translate( ${margin}, ${graphHeight+topMargin})` )
-  .call(d3.axisBottom(xScale));
-
-
-
-</script>
-
+  
+  <div style = "text-align: center;">
+  <h1> D3.js Bar Chart</h1>
+  <div id = "d3-container"></div>
+  </div>
+  <script src = "../js/graph.js"></script>
 
 
   
-
     
 </main>
     </body>
