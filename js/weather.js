@@ -1,3 +1,16 @@
+const tempapi_url = 'http://ddragon.leagueoflegends.com/cdn/9.18.1/data/en_US/champion.json';
+async function getTemp() {
+const response = await fetch(tempapi_url);
+const data = await response.json();
+console.log(data.data);
+document.getElementById('temp').textContent = data.data;
+}
+
+
+getTemp();
+
+
+/*
 const tempapi_url = 'https://api.open-meteo.com/v1/forecast?latitude=-26.12&longitude=27.91&hourly=temperature_2m&timezone=Africa%2FCairo';
 async function getTemp() {
 const response = await fetch(tempapi_url);
@@ -10,7 +23,7 @@ document.getElementById('time').textContent = data.hourly.time;
 
 
 getTemp();
-
+*/
 
 /*const tempapi = 'https://api.coindesk.com/v1/bpi/historical/close.json?start=2017-12-31&end=2018-04-01';
 

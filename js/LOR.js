@@ -142,7 +142,7 @@ svG
     .attr("cx", function(d){ return x(d.rank) })
     .attr("cy", function(d){ return y(d.lp) })
     .attr("r", 7)
-    .attr("fill", "blue");
+    .attr("fill", '#00a8e8');
 
    
 

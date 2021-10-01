@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LandingPage</title>
+    <title>Champions</title>
 
-    <link rel="stylesheet" type="text/css" href="../WSOA3029A-2262800/styling/Styling.css">
+    <link rel="stylesheet" type="text/css" href="../../styling/Styling.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+    <script src = "../../js/weather.js"></script>
+    
+ 
    
 </head>
 
@@ -48,47 +54,38 @@
    
    
    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <main style="padding-left:16px, ">
-      <header class = "heading1"><h1>Welcome to my site</h1></header>
-      <br>
-      <br>
-      <article class = "paragraph1"><p style = "font-size: 20px">I have dedicated my time to keep you up to date with not only present Esports news but also keep you informed 
-        about past Epsorts events. Keep up to date with scores, results, statistics and much more!</p></article>
-    </main>
+
+<main class = "main">
+  <br>
+  <br>
+  <br>
+  <br>
+  <header class = "heading1"><h1>League Of Legends Champions</h1></header> <br>
+  <br>
+  <br>
+  <article class = "paragraph1"><p style = "font-size: 15px">Hi!, I would like to apologise for any inconvience that this may have caused. The data on all the League Of Legends
+   Champions is yet to be displayed, as the task is Quiet a big one to undertake. If you press F12 and view your console the data is on the page if that is something you would like to view!
+  The hope is to create a Tree Chart, one that will display all the champions as well as their data with them further grouped by their class!</p></article>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p>temp: <span id = "temp"></span></p>
+  
+
+  
+ 
+  <script src = "../js/graph.js"></script>
+  <script src = "../../menu.js"></script>
+
+
+  
     
+</main>
 
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-
-hamburger.addEventListener("click", mobileMenu);
-
-function mobileMenu() {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-}
-  </script>
-
-
-    
-
-    <footer>
-      <p>LeagueOfDataSports</p>
-    </footer>
-    
+<footer>
+  <p>LeagueOfDataSports</p>
+</footer>
 
     </body>
-    <script src ="menu.js"></script>
 </html>
