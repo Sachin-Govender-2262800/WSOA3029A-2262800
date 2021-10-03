@@ -26,7 +26,7 @@
 
   .wrapper .topnav {
     width: 100%;
-    height: 40px;
+    height: 50px;
     background: white;
     padding:0 50px;
     display: flex;
@@ -35,7 +35,7 @@
   }
 
   .wrapper .topnav .left .logo{
-font-size: 25px;
+font-size: 30px;
 font-weight: bold;
 color: #00171f;
 margin-right: 25px;
@@ -57,7 +57,7 @@ margin-right: 25px;
  
   .wrapper .topnav .right ul li a{
     display: block;
-    padding: 8px 10px;
+    padding: 5px 10px;
     color: black;
   }
  
@@ -125,13 +125,13 @@ margin-right: 25px;
 .wrapper .bottomnav{
   width: 100%;
   background-color: #003459;
-  height: 35px;
+  height: 50px;
   padding: 0 50px;
 }
 
 .wrapper .bottomnav ul{
   width: 15%;
-  height: 35px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -139,9 +139,9 @@ margin-right: 25px;
 
 .wrapper .bottomnav ul li a{
   color:white ;
-  letter-spacing: 3px;
+  letter-spacing: 0px;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 17px;
 
 }
 
