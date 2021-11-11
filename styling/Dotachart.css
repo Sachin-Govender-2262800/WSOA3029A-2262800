@@ -1,0 +1,41 @@
+  #app {
+    display: flex;
+    margin: 2rem 1rem;
+  }
+
+  #chart {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    padding: 1rem;
+    background-color: black;
+  }
+
+  #chart,
+  #data {
+    margin: 0 2rem;
+  }
+
+  #data ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #data li {
+    margin-bottom: 1rem;
+   color: #b33000;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    background-color: black;
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .chartbar {
+    fill: #b33000;
+  }
+
+  .label {
+    fill: #b33000;
+  }
