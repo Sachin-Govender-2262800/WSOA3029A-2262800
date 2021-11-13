@@ -1,5 +1,4 @@
 
-  
 const Dota_DATA =  [
     {
         "team_id": 15,
