@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LorPlotGraph</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="../styling/Styling.css">
+  
+
+
+</head>
+
+<style>
+  .inside
+   {
+font-size:15px;
+font-weight: bold;
+fill:white;
+  }
+  .label{
+    font-size:15px;
+font-weight: bold;
+
+  }
+</style>
+
+
+
+
+<body>
+  <section class = "wrapper">
+    <figure class = "BorderColor"></figure>
+    <nav class = "topnav" id = "myTopnav">
+      <aside class = "left">
+        <figure class = "logo"><p><span>LeagueOf</span>DataSports</p></figure>
+       </aside>
+      
+       <aside class = "right">
+        <ul class ="nav-menu">
+          <li><a id = "home">Home</a></li>
+          <li> <a id = "about">About</a></li>
+          <li><a id = "contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+       </aside>
+       
+     </nav>
+
+<nav class = "bottomnav" id = "myBotnav">
+<ul class ="botnav-menu">
+  <li><a id = "blog">Blogs</a></li>
+  <li><a id="game">Games</a></li>
+  <li><a id="design">Designs</a></li>
+ 
+ </ul>
+ 
+</nav>
+
+
+
+
+
+
+
+
+
+
+</section>
+
+<br>
+<br>
+<main style="padding-left:16px">
+  <header class = "heading1"><h1>Could Esports Be Played Again?</h1></header>
+  <br>
+  <br>
+  <br>
+  <br>
+  <header class = "heading2"><h2>Active Covid 19 Cases</h2></header>
+  <br>
+  <br>
+  <br>
+
+  <section class = "paragraph1">Everyone understands that Esports is a form of competition between 2 or more teams and/or players, that is played using a digital device.
+     Just because it is digital does not take away from the enjoyment that is the Esports leagues. Just like a stadium for sports teams, 
+     there are arenas filled with fans showing their support for their Esports teams.
+
+     Due to Covid, there have been numerous restrictions that have affected events like this. Esports however does have the luxury of being streamed and playing online,
+      something live sports games cannot do. There is however a community of fans who love to watch their favourite teams and players live, I know this chart is something 
+      different from the charts that have been done on my website especially about games. I however feel this is an important graph to display as it may allow for users to 
+      understand the likely hood of another live Esports game being done in the future.
+<br>
+<br>
+<br>
+
+<p>
+  Unfortunately or I guess depending on how you look 
+ at it due to the lower number of cases within the 
+Australia-Oceania and African Continents the number of Active cases is harder to view.
+ This is why I have thus decided to provide the numbers as well as the pie chart below.<p> </p>
+</p>
+
+<br>
+<br>
+<br>
+
+
+  </section>
+
+  <p>continent: <span id ="NA"></span></p>
+  <p>Active: <span id ="ANA"></span></p>
+  <br>
+  <p>continent: <span id ="Asia"></span></p>
+  <p>Active: <span id ="AAsia"></span></p>
+  <br>
+  <p>continent: <span id ="SA"></span></p>
+  <p>Active: <span id ="ASA"></span></p>
+  <br>
+  <p>continent: <span id ="EU"></span></p>
+  <p>Active: <span id ="AEU"></span></p>
+  <br>
+  <p>continent: <span id ="OS"></span></p>
+  <p>Active: <span id ="AOS"></span></p>
+  <br>
+  <p>continent: <span id ="Africa"></span></p>
+  <p>Active: <span id ="AAfrica"></span></p>
+  <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<script src ="../js/coivd.js"></script>
+    <script src ="../menu.js"></script>
+    <script src ="../js/burger.js"></script>
+
+
+    
+    <footer>
+      <p>LeagueOfDataSports</p>
+    </footer>
+    
+</body>
+</html>
