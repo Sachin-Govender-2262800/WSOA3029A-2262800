@@ -1,6 +1,5 @@
 
 
-
 const api_url =   'https://corona.lmao.ninja/v2/continents?yesterday&sort';
 
 
@@ -74,6 +73,8 @@ legend.append("text").classed("label", true).text(function(d){return d.data.Cont
 .attr("fill",  function (d){return colors(d.data.Activecase);})
 .attr("x", 30)
 .attr("y",20);
+
+
 
 
 }

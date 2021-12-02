@@ -5,6 +5,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+   
 
   }
 
@@ -215,5 +216,6 @@ footer {
   font-size: 18px;
   text-align: left;
   color: black;
+  
 }
 
