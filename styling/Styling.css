@@ -5,6 +5,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    
 
   }
@@ -177,7 +178,7 @@ footer {
 }
 
 .headingblogs2 {
-  font-size: 18px;
+  font-size: 22px;
   text-align: center;
   text-transform: uppercase;
   color: black;
