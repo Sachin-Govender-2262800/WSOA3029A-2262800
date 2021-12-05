@@ -192,13 +192,20 @@ footer {
 }
 
 .heading1 {
-  font-size: 28px;
+  font-size: 30px;
   text-align: center;
   text-transform: uppercase;
   color: black;
 }
 
 .heading2 {
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+
+.heading3 {
   font-size: 22px;
   text-align: center;
   text-transform: uppercase;
